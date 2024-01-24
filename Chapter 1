@@ -10,3 +10,31 @@ After completing this chapter students will be able to:
 6. Develop output results using output statements
 7. Identify syntax errors and debugging techniques
 8. Write a basic C++ program
+
+## Introduction 
+In chapter one our goal is to explore the basics of C++ progrramming. We will begin by learning the history of computers nad the different types of computers that are available to current programmers. This will then help us understand the different elements of the computer which is something we will always be learning. More specifically we will learn the two main componnets that make up a computer system: hardware and software.
+
+## Programming with the Problem Analysis-Coding-Execution Cycle
+To be an exceptional problem solver and programmer you have to follow good good problem solving techniques. The most common way to do this is by analyzing a problem and designing steps, which is called an **algorithm**, to solve the problem. This is the first and most important step in programming.
+
+For Example:
+You design the algorithm to fidn the perimeter and area of a rectangle 
+```cpp
+perimeter = 2 * (length + width)
+area = length * width
+```
+
+
+You have to make sure that you thouroughly understand the problem. After you do that then you have to determine and understand the problem requirements. This can include things like if the program requires user interaction, data manipulation, and whether or not it produces output and what kind of output it produces. Also if the problem is to complex you cna divide the problem and smaller problems to make it easier.
+
+Now that you have discovered the problem the next step in the process is to creat the algortihm for the said problem that you have and make sure that the algorithm is correct. Once you have made sure that it is correct that is when you can begin coding it into a program. However, if it doesnt follow the languages syntax it wont work and will be incorrect so make sure that is correct as well. The final step in this process is to execute the code so that you can see if it runs correctly or not.
+
+### Review Questions 
+
+1. True/False: Making an algorithm is known as a problem solving technique.
+
+2. True/False: You must understand the problem you have first before doing anyhting else
+
+3. True/False: When the problme is complex just leave it as one problem.
+
+*Answers: 1. True 2. True 3. False*l
