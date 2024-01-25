@@ -312,3 +312,32 @@ To incorporate the result of one expression into another, it is essential to sto
 3. What is it called when one data type is automatically converted to another?
 
 *Answers: 1. True 2. Yes 3. Implicit Type*
+
+## String Type
+
+The string data type in programming is not an inherent, built-in type like the simple data types discussed earlier. Instead, it is a user-defined data type that requires accessing program components from the library, a topic that will be covered later in this chapter. It's worth noting that the string data type is part of the ANSI/ISO Standard C++.
+
+A string is a series of characters, which can be empty or contain zero or more characters. In C++, strings are represented within double quotation marks. When a string has no characters, it is referred to as a null or empty string. Here are some examples of strings, with the acknowledgment that "" represents the empty string.
+
+Example: 
+
+```cpp
+"Jalen Hughes"
+"Chloe"
+""
+```
+
+In a string, each character holds a specific position, with the first character positioned at 0, the second at 1, and so forth. The length of a string is the total count of characters within it, and this count includes any spaces present in the string.
+
+
+Strings are a versatile and intricate data type, offering more than just a storage space for textual information. They come equipped with a range of operations that allow for string manipulation. These operations include determining the length of a string, extracting specific segments from a string, and comparing different strings.
+
+### Review Questions 
+
+1. True/False: Strings are not a data type.
+
+2. Yes/No: Are strings a series of characters?
+
+3. True/False: You can have an empty string
+
+*Answers: 1. False 2. Yes 3. True*
