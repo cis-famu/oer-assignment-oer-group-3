@@ -288,3 +288,27 @@ In summary, when evaluating a mixed expression in C++, focus on one operator at 
      c) /
      
 *Answers: 1. Three 2. True 3. "()"*
+
+## Type Conversion (Casting)
+
+In the earlier section, you gained insight into the process of evaluating arithmetic expressions in C++. When dealing with operators that involve operands of different types, the integer value is converted to a floating-point value, with the decimal part set to zero. This automatic conversion of one data type to another is referred to as implicit type coercion. The examples in the previous section demonstrated that if you're not cautious about data types, implicit type coercion can lead to unexpected outcomes.
+
+To address this issue, C++ offers a mechanism for explicit type conversion through the use of a cast operator. This operator, also known as type conversion or type casting, is structured as follows:
+
+```cpp
+static_cast<dataTypeName>(expression)
+```
+
+Initially, the expression undergoes evaluation, and subsequently, its outcome is transformed into a type determined by dataTypeName. In C++, the term static_cast is reserved for this purpose. In the process of converting a floating-point (decimal) number to an integer through the cast operator, the approach involves discarding the decimal portion of the floating-point number.
+
+To incorporate the result of one expression into another, it is essential to store the initial expression's value. This practice is crucial for various reasons. Complex expressions may demand substantial computational resources and time for evaluation. By computing and preserving these values for future reference, not only does it optimize program execution speed, but it also mitigates the risk of potential typographical errors. In the context of C++, expressions undergo evaluation, and without saving the outcome, it becomes inaccessible for subsequent calculations. In essence, unless the value is stored, the output of an expression cannot be harnessed for future computations.
+
+### Review Questions
+
+1. True/False: Type conversion is converting a floating-point number into a integer number.
+
+2. Yes/No: is "static_cast" a reserved word?
+
+3. What is it called when one data type is automatically converted to another?
+
+*Answers: 1. True 2. Yes 3. Implicit Type*
