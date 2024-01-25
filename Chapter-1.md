@@ -40,10 +40,19 @@ For example:
     
 ```
 
+### Reserved Words (Keywords)
+Reserved words, commonly referred to as keywords, play a crucial role in the C++ programming language by having predefined meanings. These words serve as the fundamental elements for constructing instructions, expressions, and various program structures. Due to their specific purposes, programmers are restricted from using them as identifiers, such as variable or function names, in their code. A comprehensive grasp of these reserved words is vital as they establish the foundation of C++ syntax and define the grammar of the language.
+
+For example:
+
+```cpp
+if, char, bool, else, compl, const, double, return, short, namespace 
+```
+
 ### Identifiers 
 In the realm of programming, identifiers hold significant importance as they serve as the designated names for various elements within a codebase. In C++, these identifiers encompass variables, functions, classes, objects, labels, and user-defined types. Essentially, they act as labels that empower programmers to refer to and manage these entities seamlessly within their code. This segment strives to offer an in-depth comprehension of C++ identifiers, delving into their regulations, optimal approaches, and the pivotal role they play in shaping the structure and clarity of a C++ program.
 
-### Rules for Naming Identifiers 
+#### Rules for Naming Identifiers 
 
 C++ enforces specific guidelines and conventions when it comes to naming identifiers, aiming to uphold code clarity and mitigate conflicts. Adhering to these rules is crucial for ensuring readability and cross-platform compatibility. The key principles for naming C++ identifiers include:
 
@@ -60,3 +69,29 @@ C++ enforces specific guidelines and conventions when it comes to naming identif
 6. Global Scope: Exercise caution when using identifiers in the global scope to avoid naming clashes in extensive projects. Consider employing unique prefixes or namespaces for global identifiers.
 
 7. Underscore Convention: Identifiers starting with an underscore followed by a capital letter (e.g., "_MyIdentifier") and those with two consecutive underscores are reserved for the compiler and standard library. To prevent unintended behavior, it's advisable to steer clear of using such names.
+
+#### Best Practices for Naming Identifiers 
+
+1. Descriptive Naming: Opt for meaningful and clear names for variables, functions, and classes. For example, instead of using "n," go for something like "numStudents" to convey the purpose or content accurately.
+
+2. CamelCase Convention: For identifiers with multiple words, adhere to the CamelCase convention. Capitalize the first letter of each word, as seen in "calculateGrossSalary."
+
+3. Avoiding Abbreviations: Reduce the reliance on abbreviations to enhance clarity for other developers. Prioritize readability by using full words. For instance, favor "calculate" over unclear abbreviations.
+
+4. Consistency in Naming Style: Maintain a uniform naming style across the entire codebase. This practice simplifies the code review process and facilitates a better understanding of the code by different developers.
+
+5. Steer Clear of Hungarian Notation: Refrain from using prefixes that indicate the data type of a variable. The use of Hungarian Notation, like "i" for integers or "sz" for zero-terminated strings, is discouraged for improved code readability.
+
+6. Action-Indicative Function Names: When naming functions, incorporate verbs to signify actions. Examples include "calculate," "initialize," or "print." This approach helps in understanding the purpose and behavior of functions.
+
+Identifiers serve as the fundamental elements of a C++ program, enabling developers to establish, refer to, and manage different entities. Adhering to naming conventions and optimal practices for identifiers empowers programmers to craft code that is clear, understandable, and easier to maintain, reducing the likelihood of errors. Investing effort in selecting meaningful and descriptive names for identifiers contributes significantly to the resilience and comprehensibility of your codebase, fostering effective collaboration within a team.
+
+### Review Questions 
+
+1. True/False: char is a reserved word/keyword in C++ programming.
+
+2. True/False: float is a valid identifier name.
+
+3. Does // or /* allow multiple line comments?
+
+*Answers: 1. True 2. False 3. /* *
