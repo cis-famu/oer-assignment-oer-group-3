@@ -391,3 +391,4 @@ Null/Empty String
    : a string containing no characters
    
 Simple Data type
+   : A data type is called simple if the variable or named constant of that type can store only one value at a time.
