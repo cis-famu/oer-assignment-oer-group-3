@@ -428,3 +428,7 @@ Null/Empty String
    
 Simple Data type
    : A data type is called simple if the variable or named constant of that type can store only one value at a time.
+
+## References 
+
+Malik, D. S. (2018). C++ programming: From problem analysis to program design. Cengage Learning.
