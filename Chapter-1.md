@@ -199,3 +199,92 @@ The first statement stores 7 in the variable counter, the second statement store
 3. True/False: "counter" is an identifier capable of storing integer numbers.
 
 *Answers 1. True 2. "=" 3. True*
+
+## Arithmetic Operators, Operator Precedence, and Expressions 
+
+In C++, arithmetic operators play a crucial role as essential elements that empower programmers to execute diverse mathematical computations on numeric data types. These operators serve as tools for manipulating variables and constants, facilitating the solution of mathematical problems and the execution of numerical calculations within a program. This segment delves into the prevalent arithmetic operators found in C++, illustrating their application and demonstrating the construction of expressions to carry out intricate mathematical operations.
+
+C++ provides the following arithmetic operators:
+
+1. Addition (+): Combines two values to produce their sum.
+2. Subtraction (-): Takes the right operand away from the left operand, resulting in the difference.
+3. Multiplication (*): Multiplies two values, yielding the product of the operands.
+4. Division (/): Divides the left operand by the right operand, giving the quotient.
+5. Modulus (%): Computes the remainder when the left operand is divided by the right operand.
+
+### Order of Precedence 
+
+In C++, the order of operations is determined by operator precedence rules when multiple arithmetic operators are present in an expression. The operators *, /, and % hold a higher precedence compared to + and -. It's worth noting that among themselves, * , /, and % share the same level of precedence, as do + and -.
+
+When operators share the same level of precedence, the evaluation is carried out from left to right. To enhance clarity and avoid ambiguity, you have the option to employ parentheses to group specific arithmetic expressions. This allows you to explicitly define the order in which operations should be performed, ensuring the desired outcome of the expression.
+
+For example: 
+
+```cpp
+int result = 7 + 2 * 3; // result will be 13 (2 * 3 is evaluated first, then added to 7)
+int anotherResult = (7 + 2) * 3; // anotherResult will be 27 (7 + 2 is evaluated first, then multiplied by 3)
+```
+
+### Expressions
+
+In C++, expressions are constructed by combining variables, constants, and operators. These expressions enable programmers to tackle intricate mathematical challenges within their code using arithmetic operators.
+
+For example:
+
+```cpp
+// Area of a rectangle
+int length = 2, width = 4;
+int area = length * width;
+
+// Celsius to Fahrenheit conversion
+double celsius = 22.0;
+double fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+```
+
+In the first example, the expression `length * width` calculates the area of a rectangle. In the second example, the expression `(celsius * 9.0 / 5.0) + 32.0` converts a temperature in Celsius to Fahrenheit.
+
+### Mixed Expressions 
+
+A mixed expression is characterized by the inclusion of operands with diverse data types, combining both integers and floating-point numbers. The following expressions serve as illustrations of mixed expressions:
+
+An example is: 
+
+```cpp
+3 + 4.5
+7 / 3 + 2.3
+2.8 * 3 - 4.2 + 7.9 / 2
+```
+
+When dealing with mixed expressions in C++, certain rules come into play to determine how the evaluation takes place. These rules apply based on the types of operands involved:
+
+1. **Same Operand Types:**
+
+    * If the operator in a mixed expression has operands of the same type (either both integers or both floating-point numbers), the operator is evaluated according to the type of operands.
+     * Integer operands result in an integer outcome.
+     * Floating-point operands result in a floating-point outcome.
+
+2. **Mixed Operand Types:**
+
+    * If the operator in a mixed expression involves operands of different types (one integer and one floating-point number), the integer operand is temporarily converted into a floating-point number (with a decimal part of zero) during calculation. 
+     * The operator is then evaluated, and the result is a floating-point number.
+
+3. **Expression Evaluation:**
+
+   * The entire expression is evaluated following precedence rules. Multiplication, division, and modulus operators take precedence over addition and subtraction operators.
+    * Operators with the same level of precedence are evaluated from left to right.
+    * Parentheses can be used for grouping to enhance clarity.
+
+In summary, when evaluating a mixed expression in C++, focus on one operator at a time, adhering to precedence rules. If the operator involves operands of the same data type, apply Rule 1(a) accordingly. If the operator has mixed operand types, convert the integer operand to a floating-point number before evaluation. The examples provided illustrate how to apply these principles in practice.
+
+### Review Questions 
+
+1. How many types of operands are there
+
+2. True/False: A mixed expression has both integers and floating-point numbers.
+
+3. Which Operator has the highest precedence 
+     a) ()
+     b) +
+     c) /
+     
+*Answers: 1. Three 2. True 3. "()"*
