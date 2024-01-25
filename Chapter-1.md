@@ -149,3 +149,53 @@ This example shows the number in floating point notation.
 3. True/False: char represents a single character and occupies 1 byte
 
 *Answers: 1. bool 2. three 3. True*
+
+## Data types, Variables, and Assignment Statements 
+
+### Data Types
+Having gained an understanding of identifier definition, data types, and the concept of variables, let's delve into the process of declaring a variable. When declaring a variable, it involves more than just assigning a name to it; we also explicitly indicate the type of data that the variable is capable of storing. The general syntax for this is 
+
+```cpp
+dataType identifier;
+```
+### Variables
+
+For example:
+
+```cpp
+int age;
+double tax rate;
+char grade;
+```
+
+In the initial declaration, we instruct the system to reserve a block of memory comprising four bytes for the storage of an integer value. This allocated memory space is then assigned the identifier "counter," effectively creating a variable capable of holding an integer value. Likewise, the variable "tax rate" is defined to accommodate a value of type double, while the variable "grade" is designed to store a value of type char. Essentially, we are specifying distinct variables with specific data types and memory allocations.
+
+### Assignment Statements 
+
+A common method to store a value in a variable involves using an assignment statement. This statement follows a specific structure:
+
+```cpp
+variable = expression;
+```
+
+In C++, the assignment operator, denoted by "=", is used to evaluate an expression and assign its value to a variable.
+
+For example:
+
+```cpp
+counter = 7;
+tax rate = 0.07;
+grade = 'B';
+```
+
+The first statement stores 7 in the variable counter, the second statement stores 0.07 in tax rate, and the third statement stores the character 'B' in grade.
+
+### Review Questions
+
+1. True/False: Declaring a variable indicates the type of data that the variable is capable of storing.
+
+2. What operator is used to evaluate an expression and assign its value to a variable.
+
+3. True/False: "counter" is an identifier capable of storing integer numbers.
+
+*Answers 1. True 2. "=" 3. True*
