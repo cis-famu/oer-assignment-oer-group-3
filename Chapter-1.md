@@ -429,6 +429,16 @@ Null/Empty String
 Simple Data type
    : A data type is called simple if the variable or named constant of that type can store only one value at a time.
 
+## Programming Exercises
+
+Write a function in a programming language of your choice that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).
+
+For example:
+
+"level" is a palindrome.
+"hello" is not a palindrome.
+Your function should return True if the input string is a palindrome and False otherwise. Feel free to include additional features or constraints as you see fit.
+
 ## References 
 
 Malik, D. S. (2018). C++ programming: From problem analysis to program design. Cengage Learning.
