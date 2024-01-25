@@ -28,3 +28,14 @@ For example:
 cout << "7 + 8 = " << endl; //prints: 7 + 8 = 15
 ```
 
+The second type of comment allowed is multiple-line comments. This allows the programmer to write longer comments that cover multiple lines. Multiple-line comments are enclosed in /* and */.
+
+For example:
+
+```cpp
+/*
+    You can include comments that can 
+    occupy several lines 
+*/
+    
+```
