@@ -94,7 +94,7 @@ Identifiers serve as the fundamental elements of a C++ program, enabling develop
 
 3. Does // or /* allow multiple line comments?
 
-*Answers: 1. True 2. False 3. /* * 
+*Answers: 1. True 2. False 3. /* *
 
 ## Data Types 
 
@@ -198,7 +198,7 @@ The first statement stores 7 in the variable counter, the second statement store
 
 3. True/False: "counter" is an identifier capable of storing integer numbers.
 
-*Answers 1. True 2. "=" 3. True*
+*Answers: 1. True 2. "=" 3. True*
 
 ## Arithmetic Operators, Operator Precedence, and Expressions 
 
@@ -368,45 +368,138 @@ An example program illustrates taking input for variables like 'feet,' 'inches,'
 In C++ programming, you can initialize variables using two methods: assignment statements and input (read) statements. Assignment statements set a specific value for a variable within the code, while input statements, using cin and >> operator, allow users to interactively input values during program execution. When variables are initialized by assignment statements, their values remain constant unless the code is manually edited and recompiled. On the other hand, using input statements makes the program more versatile, as users can input different values each time the program runs. It's essential to note that C++ doesn't automatically initialize variables, and some may need explicit initialization using assignment or input statements. Ignoring proper initialization may lead to warning messages during compilation and potential abnormal program termination. Example 2-19 provides a detailed illustration of initializing variables through assignment and input statements. It demonstrates how to walk through the program, executing each statement and updating variable values accordingly. This process is a valuable debugging technique to understand and correct unexpected program results. Additionally, the example highlights the use of explicit type casting and warns about potential issues when assigning floating-point values to integer variables without proper casting. 
 
 ### Review Questions 
-1) If a variable is used in an expression, the expression would yield a meaningful value only if the variable has first been initialized. T/F (T)
-2) cout << is whats used to input data in a program T/F (F)
-3) A keyboard is a output device. T/F (F)
 
-Increment and Decrement Operators: operators used to fasten when counting statements.  
-Increment operator (++): increases the value of a variable by 1, and their types are pre-increment: ++variable and post-increment: variable++. Decrement operative (- -) decreases the value of a variable by 1 (Pre-decrement: - - variable and post-decrement: variable- -).  The difference between pre- and post- increment statements is that this incrementing is only classified when it occurs before or after the assignment. 
-Output
+1. True/False: If a variable is used in an expression, the expression would yield a meaningful value only if the variable has first been initialized. 
+
+2) True/False: cout << is whats used to input data in a program.
+
+3) True/ False: A keyboard is a output device.
+
+*Answers: 1. True. 2. False. 3. False
+
+
+## Increment and Decrement Operators: operators used to fasten when counting statements.  
+Increment operator (++): increases the value of a variable by 1, and their types are pre-increment: ++variable and post-increment: variable++. Decrement operator (- -) decreases the value of a variable by 1 (Pre-decrement: - - variable and post-decrement: variable- -). The difference between pre- and post- increment statements is that this incrementing is only classified when it occurs before or after the assignment. 
+
+### Review Questions
+
+1. Differientiate between decrement and increment operators.
+
+2. In what instance would you use an increment operator as opposed to a decrement operator?
+   
+3.  What is the symbol for a post decrement operator?
+
+*Answers: 1. Decrement decreases the count by 1 and increment increases the count by 1. 2. You use an increment operator when increasing the count. 3.  variable -- *
+
+
+## Output
 Output statement- displayed when using the following syntax “count << expression < expression. “<<“is a stream insertion operator, and with generating output with count follows two rules:
 1.	Expression evaluated and value placed at the insertion point on the output device.
 2.	To format the output, there needs to be a manipulator such as endl, which causes the coder to spawn to the next line. 
-In an output statement, a string or an expression involving only one variable or a single value evaluates to itself. Char values or values of a string only have an output of the value, but not the quotations unless included in the output. “\” is called escape character and “\n” is called the new line escape sequence. ALL VARIABLES MUST BE PROPERLY INITIALIZED because C++ doesn’t automatically initialize variables and won’t make sense. Input Variable table (77) Header file is needed when using cin and cout.
-Preprocessor Directives: Few operations are explicitly defined in C++, so the rest are stored in libraries. They all have a name and referred to by a header file. These are needed to tell the computer where to find the code to unlock the additional functions. 
-Program used to process these directives is called a preprocessor. These directives are commands provided to the Preprocessor to manipulate the text of the program before it is compiled, and they all start with #. Since they are not C++, they do not end with semicolons. To input a Preprocessor directive in a program, you need to input #include, and then the file name. These preprocessor directives are inputted in the first line, so it can be used throughout the whole program.
-Namespace and using cin and cout in a Program
+In an output statement, a string or an expression involving only one variable or a single value evaluates to itself. Char values or values of a string only have an output of the value, but not the quotations unless included in the output. “\” is called escape character and “\n” is called the new line escape sequence. ALL VARIABLES MUST BE PROPERLY INITIALIZED because C++ doesn’t automatically initialize variables and won’t make sense,. and a header file is needed when using cin and cout.
 
-Creating a C++ Program
-All statements are placed within the main function except for declaring named constants.  In the syntax of the function main, each statement is usually a declarative statement or an executable statement. “Return 0” must be included in the main function and the last statement.Preprocessor directives tell the compiler which header files to include in the program. Program contains the statements to develop output. Together, the make the source code, which must be saved in a file with the extension .cpp. Source [code] file – file containing the source code. Compiler generates object code, with a .obj file extension, and when linked to the executable code, it’s saved in a with an extension called .exe, yet all are system dependent.  
+### Review Questions 
+
+1. What is the name of this "<<" expression?
+2. True/False: end1 is an output that closes the file.
+3. Yes/No: Is the "\" called an escape character?
+
+*Answers: 1. stream insertion operator 2. False 3. Yes*
+
+
+## Preprocessor Directives: Few operations are explicitly defined in C++, so the rest are stored in libraries. They all have a name and referred to by a header file. These are needed to tell the computer where to find the code to unlock the additional functions. 
+Program used to process these directives is called a preprocessor. These directives are commands provided to the Preprocessor to manipulate the text of the program before it is compiled, and they all start with "#". Since they are not C++, they do not end with semicolons. To input a Preprocessor directive in a program, you need to input #include, and then the file name. These preprocessor directives are inputted in the first line, so it can be used throughout the whole program.
+### Namespace and using cin and cout in a Program
+Cin and cout are predefined identifiers declared in the header file within a name space. There are different ways to use an indentifier in the namespace, which is std and those are: 
+    - std::cin and std::cout 
+    - #include <iostream> 
+    using namespace std;
+    Using and namespace are reserved words.    
+If there are multiple header files, there just needs to be one using statement since it appears in all header files. 
+
+### Using the string Data Type in a Program
+String is not avaialble for use in a program, so it needs to be accessed through the header file string. 
+
+### Review Questions
+
+1. True/False: If there are multiple header files, there needs to be multiple using statements.
+2. Yes/No: Do preprocessors end with a semicolon?
+3.  What do you need to input to activate the preprocessor directive?
+
+*Answers: 1. False. 2. No. 3. "#Include" *
+
+
+## Creating a C++ Program
+All statements are placed within the main function except for declaring named constants.  In the syntax of the function main, each statement is usually a declarative statement or an executable statement. “Return 0” must be included in the main function and the last statement.Preprocessor directives tell the compiler which header files to include in the program. Program contains the statements to develop output. Together, they make the source code, which must be saved in a file with the extension .cpp. Source code file – file containing the source code. Compiler generates object code, with a .obj file extension, and when linked to the executable code, it’s saved in a with an extension called .exe, yet all are system dependent.  
 
 The general format of the main function is the heading and body. The first line is “int main ()” and this is the called the heading. The curly braces contain the body of the function which holds two types of statements: 
 •	Declaration- used to declare things such as integers (int), floating numbers (double), etc.
 •	Executable statements-  Conducts calculations, outputs, accepts inputs and manipulates data. 
 
+### Review Questions
 
-Debugging: Understanding and Fixing Syntax Errors: Typing a program is bound to result in errors. Majority of these are due to syntax errors. 
+1. What is the name of the file extension that links executable code?
 
-Program Style and Form: It’s important to make a well-structured C++ program to make it easier to manipulate, understand, and use. Also, there are certain rules for the language in order for it to function accordingly. The code must abide by the syntax rules in terms of ethics, clarity, and technical legalities. It must also contain the function main and support the language’s semantics.
-SYNTAX identifies what is legal and illegal both grammatically and semantically according to the language being used. Errors in syntax are detected during compilation. Some errors commonly found include a missing semicolon or other punctuation, or using a variable that has yet to be declared. Also, errors can cause other statements to be misinterpreted ss well. Syntax prevents these errors from spreading by finding them and hinting to the users where they are and how to fix them.
-Blanks are separators for numbers when inputting data, reserved words, and identifiers from each other and from other symbols. Blanks must never appear within a reserved word or identifier.
-Special types of punctuation are used uniquely to separate statements. Semicolons end all C++ statements and are also known as statement terminators. Curly braces are not included as C++ statements. Brackets are delimiters, whose job is to separate their function from other parts of the program. Lastly, commas are used to separate items in a list, much like in a sentence. Semantics are a set of rules that gives meaning to a language, similar to the order-of-precedence rules for arithmetic operators.
-*Input example of different semantics but same values. *
-Self-documenting lines of code by naming identifiers makes commenting less necessary because the purpose is outlined for you. Additionally, make sure to watch out for run-together words and phrasings as they cause less clarity and conciseness, so it's important to combine them together to clear up statements. Prompt lines are executable statements that inform the user what to do. Whenever an input is needed, there must be well-detailed prompt lines to describe the action needed. Statements must be able to be understood and interpreted correctly by others, so the following should be expressed: comments, references, and explanation. There's versatility and freedom when coding because you can write a statement differently if you abide by the syntax rules like correctly formatting blanks and punctuation. Documentation must be able to be understood by others, so the following should be expressed: comments, references, and explanations.
-Form and Style
+2. What are the two different types of statements for a main function?
+
+3. True/ False: Curly braces contain the body of the main function.
+
+*Answers: 1. .exe 2. Executable and declaration. 3. True * 
+
+
+## Debugging: Understanding and Fixing Syntax Errors: Typing a program is bound to result in errors. Majority of these are due to syntax errors. 
+
+## Program Style and Form: It’s important to make a well-structured C++ program to make it easier to manipulate, understand, and use. Also, there are certain rules for the language in order for it to function accordingly. The code must abide by the syntax rules in terms of ethics, clarity, and technical legalities. It must also contain the function main and support the language’s semantics.
+
+### SYNTAX identifies what is legal and illegal both grammatically and semantically according to the language being used. Errors in syntax are detected during compilation. Some errors commonly found include a missing semicolon or other punctuation, or using a variable that has yet to be declared. Also, errors can cause other statements to be misinterpreted ss well. Syntax prevents these errors from spreading by finding them and hinting to the users where they are and how to fix them.
+#### Blanks are separators for numbers when inputting data, reserved words, and identifiers from each other and from other symbols. Blanks must never appear within a reserved word or identifier.
+
+### Special types of punctuation are used uniquely to separate statements. Semicolons end all C++ statements and are also known as statement terminators. Curly braces are not included as C++ statements. Brackets are delimiters, whose job is to separate their function from other parts of the program. Lastly, commas are used to separate items in a list.
+
+### Semantics are a set of rules that gives meaning to a language, similar to the order-of-precedence rules for arithmetic operators.
+
+### Naming Identifiers
+Self-documenting lines of code by naming identifiers makes commenting less necessary because the purpose is outlined for you. Additionally, make sure to watch out for run-together words and phrasings as they cause less clarity and conciseness, so it's important to combine them together to clear up statements. 
+
+### Prompt lines
+Executable statements that inform the user what to do. Whenever an input is needed, there must be well-detailed prompt lines to describe the action needed. Statements must be able to be understood and interpreted correctly by others, so the following should be expressed: comments, references, and explanation. There's versatility and freedom when coding because you can write a statement differently if you abide by the syntax rules like correctly formatting blanks and punctuation. 
+### Documentation must be able to be understood by others, so the following should be expressed: comments, references, and explanations.
+
+### Form and Style
 There’s versatility and freedom when coding because you can write a statement in different ways as long as you abide by the syntax rules such as including a blank between values causes an error. Input example of a clustered compiler and more indented program. Basic formality rules: 
 3.	One variable per line
 4.	Put a space before and after an operator.
 5.	Keep the indents when using an IDE.
 
-More on Assignment Statements: There are simple assignment statements- (input definition) and compound assignment statements, which is essentially a more concise version of writing simple assignment statements. 
-In addition to the five arithmetic operators +, -, *, /, and %, C++ also has compound operators which are: +=, *=, and %=. *Input example showing difference of different operators*. Note- A converted assignment can be converted to a simple assignment, but a simple assignment can’t be converted to a compound assignment.
+### Review Questions
+
+1. True/False: Blanks can be placed anywhere in the program.
+
+2. What punctuation separates items in a list?
+   a) Brackets
+   b) Curles Braces
+   c) Commas
+   d) Semicolons
+
+3. Yes/No: Does coding have a strict guiddlines and doesn't offer room for flexibiltity.
+*Answers: 1. False. 2. c. 3. No.* 
+   
+
+## More on Assignment Statements: There are simple assignment statements- (input definition) and compound assignment statements, which is essentially a more concise version of writing simple assignment statements. 
+In addition to the five arithmetic operators +, -, *, /, and %, C++ also has compound operators which are: +=, *=, and %=. Note- A converted assignment can be converted to a simple assignment, but a simple assignment can’t be converted to a compound assignment.
+
+### Review Questions
+
+1. Which of the following is not a compound operator?
+   a) +
+   b) -
+   c)/
+   d) None of the above
+   
+2. True/ False: A simple assignment can be converted into a compound assignment just as easily as a compound assignment being converted into a simple assignment.
+
+3. True/ False: Simple assignments are the most concised assignment.
+*Answers: 1. d. 2. False. 3. False.*  
 
 
 ## Key Terms
@@ -429,59 +522,11 @@ Null/Empty String
 Simple Data type
    : A data type is called simple if the variable or named constant of that type can store only one value at a time.
 
-## Programming Exercises
+Increment and decrement operators
+    :manipulate the count by going up or down by 1.
 
-```cpp
-#include <iostream>
-using namespace std;
+Output statement
+    : format
 
-//named constants
-
-const int HALF_DOLLAR =  50;
-const int QUARTER = 25;
-const int DIME = 10;
-const int NICKEL = 5;
-
-int main ()
-{
-    //declare variable 
-    int chnage;
-    
-    //Statements: Step 1 - Step 12
-cout << "Enter change in cents: ";                       //Step 1
-cin >> change;                                          //Step 2
-cout << endl;
-
-cout << "The change you entered is " << chnage <<endl;
-                                                       //Step 3
-     << "The number of half-dollars to be returned "
-     << "is " << change / HALF_DOLLAR    
-     << endl;                                         //Step 4
-
-change = change % HALF_DOLLAR;                       //Step 5
-
-cout << "The number of quarters to be returned is " 
-     << change / QUARTER << endl;                   //Step 6
-
-change = change % QUARTER;                         //Step 7
-
-cout << "The number of dimes to be returned is"
-     << change / DIME << endl;                    //Step 8
-    
-change = change % DIME;                          //Step 9
-    
-cout << "The number of nickels to be returned is"
-     << change / NICKEL << endl;                //Step 10
-    
-change = change % NICKEL;                      //Step 11
-    
-cout << "The number of pennies to be returned is"
-     << change << endl;                       //Step 12
-
-    return 0;
-}
-
-
-## References 
-
-Malik, D. S. (2018). C++ programming: From problem analysis to program design. Cengage Learning.
+preprocessor
+    :program that processes the preprocessor directives.
