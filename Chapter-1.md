@@ -367,14 +367,27 @@ An example program illustrates taking input for variables like 'feet,' 'inches,'
 
 In C++ programming, you can initialize variables using two methods: assignment statements and input (read) statements. Assignment statements set a specific value for a variable within the code, while input statements, using cin and >> operator, allow users to interactively input values during program execution. When variables are initialized by assignment statements, their values remain constant unless the code is manually edited and recompiled. On the other hand, using input statements makes the program more versatile, as users can input different values each time the program runs. It's essential to note that C++ doesn't automatically initialize variables, and some may need explicit initialization using assignment or input statements. Ignoring proper initialization may lead to warning messages during compilation and potential abnormal program termination. Example 2-19 provides a detailed illustration of initializing variables through assignment and input statements. It demonstrates how to walk through the program, executing each statement and updating variable values accordingly. This process is a valuable debugging technique to understand and correct unexpected program results. Additionally, the example highlights the use of explicit type casting and warns about potential issues when assigning floating-point values to integer variables without proper casting. 
 
-
-### Key Terms
-A string  is a sequence of zero or more characters.
-A string containing no characters is called a null  or empty  string
-A data type is called simple  if the variable or named constant of that type can store only one value at a time.
-
-
 ### Review Questions 
 1) If a variable is used in an expression, the expression would yield a meaningful value only if the variable has first been initialized. T/F (T)
 2) cout << is whats used to input data in a program T/F (F)
 3) A keyboard is a output device. T/F (F)
+
+
+## Key Terms
+
+algortihm 
+   : a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer
+   
+String
+   : a series of characters, which can be empty or contain zero or more characters.
+ 
+Expressions
+   : enable programmers to tackle intricate mathematical challenges within their code using arithmetic operators.
+
+Identifiers
+   : serve as the designated names for various elements within a codebase.
+   
+Null/Empty String
+   : a string containing no characters
+   
+Simple Data type
