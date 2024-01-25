@@ -94,4 +94,58 @@ Identifiers serve as the fundamental elements of a C++ program, enabling develop
 
 3. Does // or /* allow multiple line comments?
 
-*Answers: 1. True 2. False 3. /* *
+*Answers: 1. True 2. False 3. /* * 
+
+## Data Types 
+
+In the realm of C++, data types serve as fundamental constructs, shaping the nature of information that a variable can encompass. These entities hold significant sway in dictating the size and characteristics of variables as a program unfolds. A comprehensive grasp of the foundational data types in C++ proves indispensable for crafting code that is not only proficient but also adaptable across different platforms, fostering a resilient and error-resistant programming experience. Delving into this section unveils a thorough examination of the elemental data types at one's disposal in C++, shedding light on their memory structures and the spectrum of values within their grasp.
+
+### Simple Data Types 
+
+C++ encompasses a variety of fundamental data types that can be broadly classified into distinct groups:
+
+1. Integer Types:
+      - **int**: Signifies signed integers and typically occupies 4 bytes on most systems. Its value range spans approximately from -2 billion to +2 billion.
+      - **short**: Denotes short signed integers and utilizes 2 bytes. The range typically lies between -32,768 to +32,767.
+      - **long**: Represents long signed integers and utilizes 4 bytes (or 8 bytes on specific systems). The range depends on the platform but is usually larger than that of int.
+      - **long long**: Represents very long signed integers and utilizes 8 bytes. Introduced in C++11, it offers a broader range than long.
+
+2. Floating-Point Types:
+
+      - **float**: Represents single-precision floating-point numbers using 4 bytes. It provides an approximate precision of 7 decimal digits.
+      - **double**: Signifies double-precision floating-point numbers with an allocation of 8 bytes. It offers an approximate precision of 15 decimal digits.
+      - **long double**: Denotes extended-precision floating-point numbers, surpassing the precision of double.
+
+3. Character Types:
+
+      - **char**: Represents a single character and occupies 1 byte. It can store ASCII characters or small integer values.
+
+4. Boolean Type:
+
+      - **bool**: Represents a Boolean value, which can be either true or false. Internally, it uses 1 byte to store the value.
+
+### Floating-Point Data Types
+
+In this section, we'll explore how C++ addresses decimal numbers through the use of the floating-point data type. To represent decimal numbers, C++ uses a form of scientific notation called floating-point notation. C++ offers three data types for handling decimal numbers: float, double, and long double. Similar to integral data types, these numeric types vary in the range of values they can represent.
+
+The range of values for the data types float and double is contingent upon the specific system being used. To determine these limits on a particular system, one can refer to the compiler's documentation or execute a program provided in Appendix F (Header File **cfloat**). In addition to the range of values, there exists another distinction between the float and double data types. The float type has a maximum precision of six or seven significant digits, representing the number of decimal places. Conversely, the double type can accommodate values with a precision of up to 15 significant digits.
+
+Precision refers to the maximum number of significant digits in a numerical value. In certain contexts, floating-point values are categorized as either single precision or double precision. The term "single precision" is often associated with float values, while "double precision" is used for values of type double. When working with decimal numbers, the float type is generally sufficient for most applications. However, if you require precision beyond six or seven decimal places for increased accuracy, the double type can be utilized.
+
+For example:
+
+```cpp
+7.9927347E1
+```
+
+This example shows the number in floating point notation.
+
+### Review Questions
+
+1. What data type represents a Boolean value?
+
+2. How many data types are offfered for handling decimal numbers?
+
+3. True/False: char represents a single character and occupies 1 byte
+
+*Answers: 1. bool 2. three 3. True*
