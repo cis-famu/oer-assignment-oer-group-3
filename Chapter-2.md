@@ -1,4 +1,22 @@
 
+### I/O Streams and Standard I/O Devices
+In C++, Input/Output (I/O) operations involve the flow of data between a source and a destination, represented as a sequence of bytes called a stream. A stream can be considered as a continuous flow of characters from one place to another within a program. These characters are typically used to represent text data unless the program deals with other types of information, like images or speech. There are two main types of streams in C++: input streams for receiving data and output streams for sending data. The C++ language provides powerful prewritten I/O operations to simplify handling data in programs. These operations enable programmers to interact with external sources like files, the console, or other devices seamlessly, enhancing the flexibility of their applications. Understanding and utilizing these stream-based I/O operations is crucial for effective data manipulation and program functionality. 
+
+### Using Predefined Functions in a Program
+To use a predefined function in a C++ program, certain steps must be followed. Firstly, you need to identify the header file that contains the function's specifications and include it in your program. For instance, to use the "pow" function, you must include the "cmath" header file. Next, understand the function's name, the number of parameters it requires, and the type of each parameter. For "pow," it takes two decimal numbers, and it calculates the first number raised to the power of the second. Being aware of these details is essential for utilizing the function correctly. Appendix F in the programming resources provides information about commonly used header files and predefined functions, aiding programmers in effectively incorporating these functionalities into their code. 
+
+### cin and the get Function
+when using the extraction operator (>>) to input data, whitespace characters like spaces and newlines are often skipped. This can cause issues if you need to capture these characters as part of your input. For instance, if you want to input 'A', then a space, and finally '25', the extraction operator won't work as it skips spaces. To handle this, you can use the variable 'cin' with the 'get' function. This 'get' function reads the very next character from the input, including spaces and newlines, and stores it where specified. It allows you to process input character by character, ensuring you capture whitespace when needed, especially when dealing with data on a line-by-line basis.
+
+
+### The putback and peek Functions
+When dealing with mixed data containing both numbers and characters in C++ programming, it can be challenging to determine the type of input. One approach is to read the entire data set character by character, checking if each character is a digit to identify numbers. This method, however, can lead to complex and cumbersome code. Fortunately, C++ offers two helpful stream functions that simplify such situations. These functions provide effective ways to handle mixed data, allowing for easier identification and processing of numbers and characters in a more streamlined and efficient manner.
+
+
+### Review questions
+1) cin inputs data? T/F (T)
+2) pow, called the power function, can be used to calculate xy T/F (T)
+3) Input stream is a sequence of characters from an input device to the computer. T/F (T)
     The Dot Notation between I/O Stream Variables and I/O Functions: A Precaution
     Cin.get (ch);
     If there isn’t a dot separating the variable and the function name, just the function, or missing a parentheses, then it will result in a syntax error because it will input a new undeclared identifier in the system. 
