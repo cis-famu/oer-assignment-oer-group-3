@@ -383,7 +383,30 @@ By leveraging file I/O, you can efficiently manage large datasets, pre-prepare i
     
     
     
-    
+    Programming Exercise:
+  include <iostream>
+using namespace std;
+
+int main() {
+    // Declare variables to store user input
+    int age;
+    string name;
+
+    // Prompt the user for input
+    cout << "Enter your name: ";
+    cin >> name;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    // Display the entered information
+    cout << "Hello, " << name << "! You are " << age << " years old." << endl;
+
+    return 0;
+}
+
+### References
+C++ Programming: From Problem Analysis to Program Design by D.S. Malik
      
     
      
