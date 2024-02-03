@@ -1,4 +1,4 @@
-    ## Introduction
+
     The Dot Notation between I/O Stream Variables and I/O Functions: A Precaution
     Cin.get (ch);
     If there isn’t a dot separating the variable and the function name, just the function, or missing a parentheses, then it will result in a syntax error because it will input a new undeclared identifier in the system. 
@@ -13,7 +13,7 @@
     As you can see, the dot notations job is to separate the variable name from the function name and is categorized as a member access operator. Moreover, there are multiple functions (e.g. get, ignore, peek, etc) under istream with their own designated tasks. 
     Special Takes: Istream and ostream are called classes. Cin and cout are called objects. Stream variables are called stream objects, Cin is an istream object, cout is an ostream object and so forth. 
     
-    #### Review Questions 
+    ### Review Questions 
     Part A:
     1. Which of the following will result in a syntax error?
     A. Missing a dot notation
@@ -27,7 +27,7 @@
     C.	Undeclared modifier 
     D.	Error message
     3. Yes/No: The dot notation is an operator.
-	*Answers: 1. D. 2. B. 3. Yes. 
+	*Answers: 1. D. 2. B. 3. Yes.* 
     
     ## Input Failure
     Programming is trial and error, and even though the program is syntactically correct, it might produce incorrect results if the wrong variable or misplaced variable is used. Furthermore, mistakes like inputting a letter in the space of an int or double variable will result in an input failure. 
