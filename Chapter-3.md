@@ -389,7 +389,16 @@ The conditional operator (a > b) ? a : b is used to determine the maximum of a a
 * If certain conditions are not met in a program, the program can be terminated using the assert function.
 
 ## Key Terms
-
+1. **if Statement:**
+   * Definition: A selection control structure that executes a block of code if a specified condition is true.
+2. **else Statement:**
+   * Definition: Part of the selection control structure that provides an alternative block of code to execute when the condition in the corresponding if statement is false.
+3. **Condition**:
+   * Definition: An expression that evaluates to either true or false, influencing the execution path in a program.
+4. **int**:
+   * Definition: A fundamental data type in C++ representing integer values (whole numbers without a fractional part).
+5. **bool**:
+   * Definition: A fundamental data type in C++ representing Boolean values, i.e., either true or false.
 ## References 
 C++ Programming: From Problem Analysis to Program Design by D.S. Malik
 
