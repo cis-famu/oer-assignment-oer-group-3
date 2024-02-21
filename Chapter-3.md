@@ -399,6 +399,9 @@ The conditional operator (a > b) ? a : b is used to determine the maximum of a a
    * Definition: A fundamental data type in C++ representing integer values (whole numbers without a fractional part).
 5. **bool**:
    * Definition: A fundamental data type in C++ representing Boolean values, i.e., either true or false.
+
+## Programming Exercise 
+
 ## References 
 C++ Programming: From Problem Analysis to Program Design by D.S. Malik
 
