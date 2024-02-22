@@ -371,7 +371,6 @@ False
  In programming, some situations require implementing more than two alternatives. For instance, consider a scenario where different interest rates are applied based on the checking account balance. This problem necessitates multiple selection paths, as there are four possible scenarios. To incorporate multiple selection paths in a program, nested if...else structures are used, especially when the action statement itself is an if or if...else statement. Nesting occurs when one control statement is placed within another. When dealing with nested if...else structures, it's crucial to pair each else with the appropriate if. In C++, there is no standalone else statement; every else must be associated with an if. The rule for pairing an else with an if is to associate the else with the most recent incomplete if, meaning the most recent if that hasn't been paired with an else. 
 
 ## Review Questions:
-
 True or False: Nested if...else structures are used in programming to implement multiple selection paths.
 True
 True or False: Nesting occurs when one control statement is placed within another in a nested if...else structure.
@@ -533,6 +532,20 @@ True
    * Definition: A fundamental data type in C++ representing integer values (whole numbers without a fractional part).
 5. **bool**:
    * Definition: A fundamental data type in C++ representing Boolean values, i.e., either true or false.
+  
+6. **Relational Operators**: Symbols used in programming languages to compare two values and determine the relationship between them (e.g., equal to, greater than, less than).
+
+7. **ASCII Collating Sequence**: A standard way of ordering characters based on their ASCII values, commonly used for comparison operations.
+
+8. **Compound Statement**: Also known as a block of statements, it consists of one or more statements enclosed within curly braces { and }, treated as a single statement.
+
+9. **Nested if...else**: A programming structure where one if or if...else statement is placed within another, allowing for multiple selection paths.
+
+10. **Short-Circuit Evaluation**: An optimization technique in programming languages where logical operators evaluate only the minimum number of operands necessary to determine the final result.
+
+11. **Assignment Operator**: Symbol used in programming languages to assign a value to a variable.
+
+12. **Conditional Operator**: A compact operator in programming languages like C++ and Java that serves as a shorthand for simple conditional statements.
 
 ## Programming Exercise 
 
