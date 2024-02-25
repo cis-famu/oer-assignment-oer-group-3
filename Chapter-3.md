@@ -86,6 +86,90 @@ int main() {
 
 *Answers: 1. **True** 2. **False** 3. **True***
 
+## Relational Operators and the string Type
+String Type has variables compared character by character using the ACII collating sequence until there is a mismatch or the are equal. If there are different lengths but the characters are the same, the string with less characters is determined less than the longer string.
+Ex. 
+String str1 = “Hey” 
+String str2 = “Hi”
+String str3 = “Binder”
+String str4 = “Big”
+String str5 = “Bigger”
+
+## Expression	Value/ Explanation	
+Str2 > str1	True	Since ‘I’ is after ‘e’, it’s heavier so it’s true. 
+Str2 < “Hide”	False	Hide is longer than string 2 so it’s false. 
+Str4< str 5	True	Same rules apply
+Str 4 < str5	True	“G” comes before “n”.
+		
+
+## Compound (Block of Statements)
+If and if… else structures only control one statement, but if you were to add curly braces, then it will allow more complex statements called compound or block of statements.  
+Ex. 
+If (price > 20)
+{ 
+	Cout << “ You do not have adequate funds.” << endl;
+	Cout << “ This item is out of your budget.” << endl;
+}
+Else 
+{
+	Cout << “Cha Ching!” << endl;
+	Cout << “Spend wisely!” << endl;
+
+## Multiple Selections: Nested if
+This is applied when there are multiple selection paths, and when one control statement is within another it has to be nested. 
+Ex. 
+If (OverallGPA >= 90)
+	Cout << “You have a 4.0 GPA.” << endl;
+Else if (OverallGPA >=80)
+	Cout << “You have a 3.0 GPA.” << endl;
+Else if (OverallGPA >=70)
+	Cout << “You have a 2.0 GPA.” << endl;
+Else if (OverallGPA >=60)
+	Cout << “You have a 1.0 GPA.” << endl;
+Else 
+	Cout << “You’re failing.” << endl;
+
+## Comparing if…else Statements with a Series of if Statements
+There are two different program segments, and one is a sequence of if…else statements and if statements but having only if statements make the program run slower because the computer has t read each expression for all if statements because there isn’t an else statement. 
+Short-Circuit Evaluation
+C++ uses an algorithm for logical expressions using the following statements:
+(X>y) || (x==5) 
+(A==b) && (x>=7)
+Short-circuit evaluation evaluates the expression from left to right, and as soon as the entire logical expression is known, the evaluation stops. 
+Ex. Line 2 says (A==b) && (x>=7) (&& means and), and if the operant is false, then the entire expression evaluates or false. 
+
+## Comparing Floating-Point Numbers for Equality: A Precaution
+A way to check if two floating-point numbers are equal is determining whether the absolute value of their value of their difference is less than a certain tolerance. To find the absolute value, use the function fabs of the header file. 
+Ex. Fabs (x-y)
+
+## Associativity of Relational Operators: A Precaution 
+Use proper logical operators.
+
+## Avoiding Bugs by Avoiding Partially Understood Concepts and Techniques
+Look at the shaded areas of the run to identify the areas that need to be corrected. Moreover, you must understand the concepts and techniques of procedures such as if… else statements, setprecision, etc, because it will avoid a lot of debugging time.
+
+## Input Failure and the if Statement
+In order to avoid a fail state, you can use if statements to check the status of an input stream variable and, if the input stream enters the fail state, include instructions that stop program execution. Other reasons would be attempting to open an input file that does not exist or read beyond the end of an input file.
+To prevent this, we can check the status of the input stream variable. If it works then it evaluates to true, but if it doesn’t then it’s false. 
+
+## Confusion between the Equality Operator (==) and the Assignment Operator (=)
+C++ allows you to use any expression that can be evaluated to ether true or false as an expression in the if structure. 
+Ex. 
+If (x=10)
+	Cout << “The score is 10.” << endl;
+Because of this it makes the whole expression 10. 
+The appearance of + in place of == resembles a silent killer, so instead of it being a syntax error, it becomes a logical error so it will still run, but the output won’t be what was expected. 
+
+### Review Questions 
+1. What function do you use to check the absolute value?
+A) close
+B) fabs
+C) clear
+D) absolute
+2. True/False: Silent killers still are picked up by the program and will result in a syntax error.
+3. Fill in the blank: In order for the computer to process expressions efficiently you must have both if and _ statments.
+*Answer Key: 1. B. 2. False. 3. Else
+
 ### Comparing Characters 
 In the context of char values, the truth or falsehood of an expression involving relational operators is contingent upon the machine's collating sequence. The collating sequence establishes the order in which characters are arranged, influencing the outcome of comparisons. Notably, the relational operators for char values compare the ASCII or Unicode values assigned to the characters based on the collating sequence. Therefore, the result of such expressions varies depending on the specific character set and encoding used by the machine.
 
