@@ -213,7 +213,62 @@ int main() {
 20. After a continue statement executes in a for loop, the update statement is the next statement executed.
 
 ## Key Terms
+* Control Structures:
 
+Definition: Constructs in a programming language that manage the flow of execution based on specified conditions.
+
+* Conditional Statements:
+
+Definition: Statements that allow the program to make decisions and execute different code blocks based on specified conditions. Examples include if, else, and switch.
+
+* Branching:
+
+Definition: The process of directing the program's flow to different sections based on certain conditions.
+
+* Looping:
+
+Definition: Repeating a set of statements multiple times until a specific condition is met. Examples include for, while, and do-while loops.
+
+* if Statement:
+
+Definition: A conditional statement that executes a block of code if a specified condition is true.
+
+* else Statement:
+
+Definition: A part of the if statement that specifies a block of code to be executed if the condition in the if statement is false.
+
+* switch Statement:
+
+Definition: A multi-branching statement that allows a variable to be tested for equality against a list of values.
+
+* for Loop:
+
+Definition: A looping construct that repeats a block of code a specific number of times, controlled by an initialization, a condition, and an iteration statement.
+
+* while Loop:
+
+Definition: A looping construct that repeats a block of code as long as a specified condition is true.
+
+* do-while Loop:
+
+Definition: A looping construct that executes a block of code once and then repeats it as long as a specified condition is true.
+
+* Break Statement:
+
+Definition: A statement used to exit a loop prematurely, skipping the remaining iterations.
+
+* Continue Statement:
+
+Definition: A statement used to skip the rest of the code inside a loop for the current iteration and move to the next iteration.
+
+* Nested Control Structures:
+
+Definition: The practice of placing one control structure inside another. For example, having a loop inside another loop or an if statement inside a loop.
+
+
+* Control Variable:
+
+Definition: A variable used to control the flow of a loop, often acting as a counter or a condition-checking variable.
 
 
 
