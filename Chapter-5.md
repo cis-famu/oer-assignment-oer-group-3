@@ -1,3 +1,26 @@
+# Introduction 
+In C++, user-defined functions play a fundamental role in structuring programs by encapsulating specific tasks or functionalities into reusable blocks of code. These functions are created by the programmer to perform custom operations, enhance code readability, and promote modularity. By defining user-defined functions, programmers can break down complex problems into smaller, manageable units, making the codebase easier to understand, maintain, and debug. These functions can have various return types, accept parameters, and be called from different parts of the program, offering flexibility and efficiency in software development. Overall, user-defined functions empower programmers to write more structured and organized code, leading to improved software quality and development productivity. Large programs typically use user-defined functions rather than the previously described functions. Functions are called modules and user-defined functions are used to form a larger program whereas predefined functions make it more difficult because their code is not available for us.  
+
+## Predefined Functions  
+Every function has a name and does some computation.  
+
+For Example:
+Predefined mathematical functions: 
+
+Pow (x, y) = x^y and these are the parameters 
+
+	Pow (3.0, 3) - 3.0^3 = 27 
+
+Sqrt (x) = nonnegative square root of x for x >= 0.0.  
+
+	Sqrt 9.0 is 3.0 
+
+Floor (x) = largest whole number that is less than or equal to x.  
+
+	Floor (36. 23) is 36 
+
+All these predefined functions are considered doubles.  
+
 # User-defined Functions
 
 ## Objectives
@@ -52,8 +75,162 @@
 * Define multiple functions with the same name but different parameter lists.
 * Provides flexibility and readability in code.
 
-## Introduction
-In C++, user-defined functions play a fundamental role in structuring programs by encapsulating specific tasks or functionalities into reusable blocks of code. These functions are created by the programmer to perform custom operations, enhance code readability, and promote modularity. By defining user-defined functions, programmers can break down complex problems into smaller, manageable units, making the codebase easier to understand, maintain, and debug. These functions can have various return types, accept parameters, and be called from different parts of the program, offering flexibility and efficiency in software development. Overall, user-defined functions empower programmers to write more structured and organized code, leading to improved software quality and development productivity.
+## Value- Returning Functions 
+
+To use any of the predefined value returning functions such as pow, abs, islower, and toupper, you must know the name of the header file (for that function), input that header file using an include statement along with the following: the name of the function, parameters, data type of parameters, the data type of the value(value returned) by the function, and the code required to accomplish the task.   
+
+	The first four are the heading/ function header and the fifth is the body of the function and together, these five properties are called the definition.  
+
+*Note! Value-returning function only returns ONE value so to keep the function you must save the value for further calculation, use in some calculation, or print the value.  
+Furthermore, this function is used for an assignment, a parameter in a function call, or an output statement. These are called expressions.*
+
+For Example:  
+
+Int abs (int number) 
+
+Abs is called a formal parameter, so it’s a number.  
+
+Ex.  
+
+Double u = 2.5; 
+
+Double v = 3.0; 
+
+Double x, y; 
+
+X = pow (u, v) ;  
+
+Y = pow (2.0, 3.2) + 5.1; 
+
+Cout << u << “ to the power of 7 = “ << pow (u, 7) << endl;  
+
+The variables u and v that appear in the call to the function pow in Line 1 are called the actual parameters of that call. Formal is declared in the function heading, but the actual parameter is in the call to a function.  
+
+#### Syntax: Value- Returning Function 
+
+	FunctionType functionName (formal parameter list) 
+
+{ 
+
+Statements 
+
+} 
+
+Aka data type or return type.  
+
+#### Syntax: Formal Parameter List 
+
+	DataType identifier, dataType identifer, ... 
+
+#### Function Call  
+
+	FunctionName (actual parameter list) 
+
+#### Syntax: Actual Parameter List 
+
+Expression or variable,  expression or variable, ... 
+
+Expression is one constant value and can be empty. If it is empty, use the following form: 
+
+FunctionType functionName ()  
+
+Because both are empty. If everything is empty use the following: 
+
+FunctionName () 
+
+The number of actual parameters must match the formal parameters. “one- to- one correspondence for formal and actual parameters. 
+
+#### return Statement  
+
+After being computed, the functions return this value through the return statement.  
+
+#### Syntax: return Statement  
+
+Return expr; 
+
+Expr can be a variable, constant value, or expression.  
+
+Return is a reserved word. Once the return statement is executed, the function ends, and the control goes back to the calling function. If a return statement is executed in the function main, the program terminates.  
+
+#### Function Prototype - the function heading, terminated by a semicolon; without the body of the function. It is not a definition and can be placed before any function definition.  
+
+#### Syntax: Function Prototype 
+
+FunctionType functionName (parameter list); 
+
+#### Value Returning Functions: Some Peculiarities: 
+
+If a return statement contains more than one expression, only the value of the last expression is returned. To save yourself from the headache, don’t have more than one.  
+
+#### More Examples of Value-Returning Functions 
+
+For Example: 
+#include <iostream>
+#include <cctype> // for isdigit() function
+#include <cmath> // for demonstration purposes
+
+using namespace std;
+
+// Function to check if a character is a digit
+bool isDigit(char ch) {
+    return isdigit(ch); // using isdigit() function from <cctype> header
+}
+
+int main() {
+    char input;
+
+    // Prompt the user to enter a character
+    cout << "Enter a character: ";
+    cin >> input;
+
+    // Check if the entered character is a digit using the user-defined function
+    if (isDigit(input)) {
+        cout << "The character " << input << " is a digit
+
+
+#### Flow of Compilation and Execution 
+
+Must declare an identifier before you can use it. If main appears first, it is compiled first, but if it appears anywhere else than all the functions outside of prototypes are compiled before the function main in the order placed (top to bottom). 
+
+### Programming Example: Largest Number
+
+*Look in book*
+### Void Functions 
+
+Both void and value-returning functions have a heading and body, can place user-defined void functions before or after the function main.A void function does not have a data type, so functionType is the return type. Since they don’t have a data type, they’re not considered an expression but a standalone statement.
+
+Function Definiton 
+
+Void functionName (formal parameter list) 
+
+{  
+
+Statements 
+
+} 
+
+Formal Parameter list 
+
+DataType & variable, dataType & variable, ... 
+
+Both must be specified.  
+
+Function Call  
+
+FunctionName (actual parameter list) ;  
+
+Actual Parameter List 
+
+Expression or variable, expression or variable, ... 
+
+The same rules apply for void functions when it comes to actual and formal parameters.
+
+### Value Parameters
+An observation about void functions and value parameters is that when a function is called for a value parameter, the actual parameter value is copied into the correspondence formal parameter. During program execution, the formal parameter manipulates the data stored in its own memory space by copying the actual parameter and making it a separate variable.  
+
+### Reference Variables as Parameters
+A formal parameter is a reference parameter because it receives the address of the actual parameter. Reference parameters can pass one or more values from a function and can change the value of the actual parameter.
+These parameters are beneficial when it comes to the value of the actual parameter needing to be changed, when you want to return more than one value from a function, and passing the address. 
 
 ### Value and Reference Parameters and Memory Allocation
 When a function is invoked, the computer allocates memory for its formal parameters and local variables within the function's data area. For value parameters, the value of the actual parameter gets copied into the memory assigned to the corresponding formal parameter. However, in the case of reference parameters, the formal parameter contains the address (or pointer) of the actual parameter's memory location. This means that both the formal and actual parameters point to the same memory location. Therefore, any modifications made to the formal parameter directly affect the data stored at that memory location, resulting in permanent changes to the actual parameter's value during program execution.
@@ -440,6 +617,42 @@ This demonstrates how default parameters allow flexibility in function calls by 
 * Variables in C++ can be local (within a function or block) or global (outside of any function or block). Local variables are automatic and have their memory allocated and deallocated as functions are called and exited, while global variables are static and retain their memory throughout program execution.
 
 * C++ does not allow function nesting, but functions can access variables based on scope rules, which define where identifiers are accessible within the program.
+
+  ## Programming Exercise
+  #include <iostream>
+#include <cmath>
+
+using namespace std;
+
+// Function to calculate the hypotenuse of a right triangle
+double calculateHypotenuse(double side1, double side2) {
+    return sqrt(pow(side1, 2) + pow(side2, 2));
+}
+
+int main() {
+    double side1, side2;
+
+    // Prompt the user to enter the lengths of the two sides of the right triangle
+    cout << "Enter the length of side 1: ";
+    cin >> side1;
+    cout << "Enter the length of side 2: ";
+    cin >> side2;
+
+    // Check if the entered sides are non-negative
+    if (side1 >= 0 && side2 >= 0) {
+        // Calculate the hypotenuse using the user-defined function
+        double hypotenuse = calculateHypotenuse(side1, side2);
+
+        // Display the result
+        cout << "The hypotenuse of the right triangle with sides " << side1 << " and " << side2 << " is: " << hypotenuse << endl;
+    } else {
+        cout << "Side lengths must be non-negative." << endl;
+    }
+
+    return 0;
+}
+\
+This program uses the multiple pow pre-identified functions for the a^2 + b^2 = c^2 expression to find a side of the triangle. 
 
   ## Key Terms
 1. Function Declaration: The process of declaring a function by specifying its name, return type, and parameters in the program. This informs the compiler about the existence and structure of the function.
