@@ -440,3 +440,28 @@ This demonstrates how default parameters allow flexibility in function calls by 
 * Variables in C++ can be local (within a function or block) or global (outside of any function or block). Local variables are automatic and have their memory allocated and deallocated as functions are called and exited, while global variables are static and retain their memory throughout program execution.
 
 * C++ does not allow function nesting, but functions can access variables based on scope rules, which define where identifiers are accessible within the program.
+
+  ## Key Terms
+1. Function Declaration: The process of declaring a function by specifying its name, return type, and parameters in the program. This informs the compiler about the existence and structure of the function.
+
+2. Function Definition: The process of providing the actual implementation of a function by writing the code block that defines its behavior. The definition includes the function body, which contains the statements executed when the function is called.
+
+3. Return Type: Specifies the data type of the value that the function returns to the caller. It can be any valid data type in C++, such as int, float, void, or custom-defined types.
+
+4. Function Name: An identifier used to uniquely identify a function within the program. It is used to call the function from other parts of the program.
+
+5. Parameters: Variables or values passed to the function when it is called, providing input for the function to perform its task. Parameters can be of different data types and can be passed by value or by reference.
+
+6. Arguments: The actual values or expressions passed to a function as parameters when the function is called. Arguments must match the data types and order of parameters specified in the function declaration.
+
+7. Function Prototype: Also known as function signature, it is a declaration of the function that includes the function name, return type, and parameter list. It informs the compiler about the function's existence and allows the function to be called before its actual definition in the program.
+
+8. Function Body: The block of code within a function that contains the statements and instructions defining the behavior of the function. It is enclosed within curly braces {}.
+
+9. Local Variables: Variables declared within a function's scope that are only accessible and valid within that function. They are created when the function is called and destroyed when the function exits.
+
+10. Global Variables: Variables declared outside of any function, making them accessible from anywhere in the program. They have a global scope and retain their values throughout the program's execution.
+
+11. Parameter Passing: The process of passing arguments to a function's parameters when the function is called. Parameters can be passed by value, by reference, or by pointer, affecting how the function interacts with the arguments.
+
+12. Function Overloading: The ability to define multiple functions with the same name but different parameter lists. This allows for versatility in function usage and promotes code reusability.
