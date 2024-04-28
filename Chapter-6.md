@@ -500,6 +500,183 @@ This example demonstrates how functions can be used with enumeration types to pe
 3. True/False: Functions in C++ accept enumeration types as parameters or return them as results?
 
 ***Answers: 1. True 2. Yes 3. True***
+
+## Introduction
+Large programs typically use user-defined functions rather than the previously described functions. Functions are called modules and user-defined functions are used to form a larger program whereas predefined functions make it more difficult because their code is not available for us. 
+
+## Predefined Functions 
+Every function has a name and does some computation. 
+
+For example:
+Predefined mathematical functions:
+
+Pow (x, y) = x^y and these are the parameters
+
+Pow (3.0, 3) - 3.0^3 = 27
+
+Sqrt (x) = nonnegative square root of x for x >= 0.0. 
+
+Sqrt 9.0 is 3.0
+
+Floor (x) = largest whole number that is less than or equal to x. 
+
+Floor (36. 23) is 36
+All these predefined functions are considered doubles. 
+
+### Review Questions 
+1. Yes/No: Do functions have a computation?
+2. Name three different predefined mathematical functions.
+3. True/False: All predefined mathematical functions are doubles.
+
+***Answers: 1. Yes 2. Pow, Srt, Exp (and more) 3. True ***
+
+### User-Defined Functions 
+Function	Header File	Purpose	Parameter(s) Type	Result
+abs(x)	<cmath>	Returns the absolute value of its argument: abs(-7) = 7	int (double)	int (double)
+ceil(x)	<cmath>	Returns the smallest whole number that is not less than x: ceil(56.34) = 57.0	double	double
+cos(x)	<cmath>	Returns the cosine of angle x: cos(0.0) = 1.0	double (radians)	double
+exp(x)	<cmath>	Returns ex, where e = 2.718: exp(1.0) = 2.71828	double	double
+fabs(x)	<cmath>	Returns the absolute value of its argument: fabs(-5.67) = 5.67	double	double
+floor(x)	<cmath>	Returns the largest whole number that is not greater than x: floor(45.67) = 45.00	double	double
+islower(x)	<cctype>	Returns true if x is a lowercase letter; otherwise it returns false; islower('h') is true	int	int
+isupper(x)	<cctype>	Returns true if x is a uppercase letter; otherwise it returns false; isupper('K') is true	int	int
+pow(x, y)	<cmath>	Returns xy; If x is negative, y must be a whole number: pow(0.16, 0.5) = 0.4	double	double
+sqrt(x)	<cmath>	Returns the nonnegative square root of x, x must be nonnegative: sqrt(4.0) = 2.0	double	double
+tolower(x)	<cctype>	Returns the lowercase value of x if x is uppercase; otherwise, returns x	int	int
+toupper(x)	<cctype>	Returns the uppercase value of x if x is lowercase; otherwise, returns x	int	int
+
+We spoke about this before but to use the predefined function in a program, the user must input the header file that has the purpose you want using the include statement. 
+
+For example:
+include <iostream>
+#include <cmath>
+ 
+using namespace std;
+ 
+int main () {
+    double num;
+    
+    // Prompt the user to enter a number
+    cout << "Enter a number to find its square root: ";
+    cin >> num;
+    
+    // Check if the number is non-negative
+    if (num >= 0) {
+        // Calculate the square root using sqrt() function
+        double squareRoot = sqrt(num);
+        
+        // Display the result
+        cout << "Square root of " << num << " is: " << squareRoot << endl;
+    } else {
+        cout << "Square root of a negative number is undefined." << endl;
+    }
+    
+    return 0;
+}
+
+This program works as follows. It inputs the number to find the square root and if it is a nonnegative number then it finds the value, but if it is, then the program would say it is undefined. 
+
+## User Defined Functions 
+User-defined functions in C++ are separated into two categories:
+•	Value-returning functions – Returns a value of a specific data type using the return statement.  have a return type. 
+•	Void functions – don't have a return type
+
+### Review Questions 
+1. What are the two types of user-defined functions in C++?
+2. What must you do before you usr a predefined/user-defined function?
+3. True/False: Void functions have a return type.
+
+***Answers: 1. Void and value-returning 2. Include the file name in the header file. 3. False***
+
+## Value- Returning Functions
+To use any of the predefined value returning functions such as pow, abs, islower, and toupper, you must know the name of the header file (for that function), input that header file using an include statement along with the following: the name of the function, parameters, data type of parameters, the data type of the value(value returned) by the function, and the code required to accomplish the task.  
+The first four are the heading/ function header and the fifth is the body of the 		function and together, these five properties are called the definition. 
+Note! Value-returning function only returns ONE value so to keep the function you must save the value for further calculation, use it some calculation, or print the value. 
+Furthermore, this function is used for an assignment, a parameter in a function call, or an output statement. These are called expressions. 
+
+For example 
+Int abs (int number)
+Abs is called a formal parameter, so it’s a number. 
+
+For example: 
+Double u = 2.5;
+Double v = 3.0;
+Double x, y;
+X = pow (u, v) ; 
+Y = pow (2.0, 3.2) + 5.1;
+Cout << u << “ to the power of 7 = “ << pow (u, 7) << endl; 
+The variables u and v that appear in the call to the function pow in Line 1 are called the actual parameters of that call.
+Formal is declared in the function heading, but the actual parameter is in the call to a function. 
+
+### Syntax: Value- Returning Function
+FunctionType functionName (formal parameter list)
+{
+Statements
+}
+Aka data type or return type. 
+
+### Syntax: Formal Parameter List
+DataType identifier, dataType identifer, ...
+
+### Function Call 
+FunctionName (actual parameter list)
+
+### Syntax: Actual Parameter List
+Expression or variable,  expression or variable, ...
+Expression is one constant value and can be empty. If it is empty , use the following form:
+FunctionType functionName () 
+Because both are empty. If everything is empty use the following:
+FunctionName ()
+The number of actual parameters must match the formal parameters. “one- to- one correspondence for formal and actual parameters.
+
+### Return Statement 
+After being computed, the functions return this value through the return statement. 
+
+### Syntax: return Statement 
+Return expr;
+Expr can be a variable, constant value, or expression. 
+Return is a reserved word. Once the return statement is executed, the function ends, and the control goes back to the calling function. If a return statement is executed in the function main, the program terminates. 
+Function Prototype - the function heading, terminated by a semicolon; without the body of the function. It is not a definition and can be placed before any function definition. 
+
+### Syntax: Function Prototype
+FunctionType functionName (parameter list);
+
+### Value Returning Functions: Some Peculiarities:
+If a return statement contains more than one expression, only the value of the last expression is returned. To save yourself from the headache, don’t have more than one. 
+More Examples of Value-Returning Functions
+Flow of Compilation and Execution
+Must declare an identifier before you can use it. If main appears first, it is compiled first, but if it appears anywhere else than all the functions outside of prototypes are compiled before the function main in the order placed (top to bottom).
+
+### Review Questions 
+1. How many values does the value-returning type return?
+2. What would happen if there was more than one value in the return?
+3. True/False: The syntax for both expressions in the actual parameter list to be empty is FunctionType functionName ().
+
+***Answers: 1. 1 2. Returns the last data. 3. False***
+
+## Void Functions
+Both void and value-returning functions have a heading and body, can place user-defined void functions before or after the function main.A void function does not have a data type, so functionType is the return type. Since they don’t have a data type, they’re not considered an expression but a standalone statement. 	
+Function Definiton
+Void functionName (formal parameter list)
+{ 
+Statements
+}
+Formal Parameter list
+DataType & variable, dataType & variable, ...
+Both must be specified. 
+Function Call 
+FunctionName (actual parameter list) ; 
+Actual Parameter List
+Expression or variable, expression or variable, ...
+Same rules apply for void functions when it comes to actual and formal parameters.
+
+
+## Value Parameters
+An observation about void functions and value parameters is that when a function is called for a value parameter, the actual parameter value is copied into the correspondence formal parameter. During program execution, the formal parameter manipulates the data stored in its own memory space by copying the actual parameter and making it a separate variable. 
+
+## Reference Vairables as Parameters
+Calculates grade 
+
 ## Chapter Summary 
 1. An enumeration type is a set of ordered values.
 
